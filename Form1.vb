@@ -1,6 +1,5 @@
 ﻿Public Class Calculadora
 
-
     Dim doOperations As Boolean = False
     Dim lastButtonHas As String = Constants.UNDEFINED_OPERATION
     Dim screenValue As Double = Constants.ZERO_NUM
@@ -8,18 +7,14 @@
     Dim result As Double = Constants.ZERO_NUM
     Dim operation As String = Constants.UNDEFINED_OPERATION
 
+    Dim calculator = New MakerCalc()
+
 
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblScreen.Text = Constants.DEFAULT_SCREEN_VALUE
-
-
     End Sub
 
-    Private Sub addToScreen(valueToUpdate)
-        If (screenHasDefaultValue()) Then clearScreen()
-        Dim oldValueOnScreen As String = lblScreen.Text
-        lblScreen.Text = oldValueOnScreen + valueToUpdate
-    End Sub
+
 
     Private Function screenHasDefaultValue()
         Dim hasDefaultValue As Boolean = False
@@ -106,7 +101,7 @@
                 operation = buttonPressed.Tag
             End If
             If result <> Constants.ZERO_NUM Then
-                makeOperations()
+                result = calculator.makeOperations(operation, result, auxiliarValue)
                 operation = buttonPressed.Tag
                 If lastButtonHas.Equals(Constants.HAS_OPERATION) Then HasDoubleTapOperation(buttonPressed)
                 updateOperationScreen(operation)
@@ -126,7 +121,7 @@
             If operation.Equals(Constants.HAS_EQUALS) Then
                 operation = buttonPressed.Tag
             Else
-                makeOperations()
+                result = calculator.makeOperations(operation, result, auxiliarValue)
                 printValueOnScreen(result)
                 operation = buttonPressed.Tag
             End If
@@ -146,31 +141,19 @@
     End Sub
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
-        makeOperations()
+        result = calculator.makeOperations(operation, result, auxiliarValue)
         printValueOnScreen(result)
         updateOperationScreen(Constants.EQUALS_SIMBOL & result & Constants.SEPARATOR_SIMBOL & result)
         operation = Constants.HAS_EQUALS
         auxiliarValue = result
         lastButtonHas = Constants.UNDEFINED_OPERATION
     End Sub
-    Private Sub makeOperations()
-        Select Case operation
-            Case Constants.OP_PLUS
-                result += auxiliarValue
-            Case Constants.OP_MINUS
-                result -= auxiliarValue
-            Case Constants.OP_MULTIPLY
-                result *= auxiliarValue
-            Case Constants.OP_DIVISION
-                If (auxiliarValue = Constants.ZERO_NUM) Then
-                    printValueOnScreen(Constants.MESSAGE_ERROR)
-                Else
-                    result /= auxiliarValue
-                End If
-        End Select
-    End Sub
-    Private Sub updateOperationScreen(newValue)
 
+
+
+
+
+    Private Sub updateOperationScreen(newValue)
         If lblOperationScreen.Text.Length >= 32 Then
             lblOperationScreen.Text = Constants.SEPARATOR_SIMBOL & result & Constants.SPACER
         End If
@@ -178,7 +161,6 @@
             deleteLastValueOperationScreen()
         End If
         lblOperationScreen.Text &= newValue
-
     End Sub
 
     Private Sub deleteLastValueOperationScreen()
@@ -196,8 +178,16 @@
         lblOperationScreen.Text = lblOperationScreen.Text.TrimEnd(valueCharsToRemove)
     End Sub
 
+
+
     Private Sub printValueOnScreen(valueToPrint)
         lblScreen.Text = CStr(valueToPrint)
+    End Sub
+
+    Private Sub addToScreen(valueToUpdate)
+        If (screenHasDefaultValue()) Then clearScreen()
+        Dim oldValueOnScreen As String = lblScreen.Text
+        lblScreen.Text = oldValueOnScreen + valueToUpdate
     End Sub
     Private Sub deleteLastValueMainScreen()
         If lblScreen.Text.Length > 1 Then
