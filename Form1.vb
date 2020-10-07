@@ -95,11 +95,15 @@
 
     Private Sub operationPressed(sender As Object, e As EventArgs) Handles MyBase.Click, btnRoot.Click, btnRisedSquare.Click, btnPlus.Click, btnPercentage.Click, btnMultiply.Click, btnMinus.Click, btnInverse.Click, btnDivision.Click
         Dim buttonPressed As Button = sender
+
         If operation.Equals(Constants.HAS_EQUALS) Then operation = Constants.UNDEFINED_OPERATION
+
         If (lastButtonHas.Equals(Constants.HAS_NUMBER)) Then
+
             If operation.Equals(Constants.UNDEFINED_OPERATION) Then
                 operation = buttonPressed.Tag
             End If
+
             If result <> Constants.ZERO_NUM Then
                 result = calculator.makeOperations(operation, result, auxiliarValue)
                 operation = buttonPressed.Tag
@@ -111,8 +115,11 @@
                 result = auxiliarValue
                 auxiliarValue = Constants.ZERO_NUM
                 If lastButtonHas.Equals(Constants.HAS_OPERATION) Then HasDoubleTapOperation(buttonPressed)
+
                 updateOperationScreen(operation)
             End If
+
+
         ElseIf (operation.Equals(Constants.UNDEFINED_OPERATION)) Then
             operation = buttonPressed.Tag
             printValueOnScreen(operation)
