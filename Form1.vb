@@ -47,7 +47,12 @@
         Else
             auxiliarValue = removeLastValueOfDouble(auxiliarValue)
         End If
-        If result.ToString.Length = 1 Then
+        If lastButtonHas.Equals(Constants.HAS_OPERATION) Then
+            operation = Constants.UNDEFINED_OPERATION
+            lastButtonHas = Constants.HAS_DELETEONE
+            deleteLastOperationOnOperationScreen()
+
+        ElseIf result.ToString.Length = 1 Then
             result = Constants.ZERO_NUM
         Else
             result = removeLastValueOfDouble(result)
@@ -155,10 +160,6 @@
         auxiliarValue = result
         lastButtonHas = Constants.UNDEFINED_OPERATION
     End Sub
-
-
-
-
 
     Private Sub updateOperationScreen(newValue)
         If lblOperationScreen.Text.Length >= 32 Then

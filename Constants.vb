@@ -13,6 +13,7 @@
     Friend Const HAS_DOUBLE_TAP_OPERATION As String = "DOUBLE_TAP_OPERATION"
     Friend Const HAS_NUMBER As String = "NUMBER"
     Friend Const HAS_EQUALS As String = "EQUALS"
+    Friend Const HAS_DELETEONE As String = "DELETE_ONE"
 
     Friend Const DOT_STRING As String = "."
     Friend Const OP_PLUS As String = "+"
