@@ -37,10 +37,6 @@
         operation = Constants.UNDEFINED_OPERATION
     End Sub
 
-    Private Sub btnDot_Click(sender As Object, e As EventArgs) Handles btnDot.Click
-        addToScreen(Constants.DOT_STRING)
-    End Sub
-
     Private Sub btnBackSpace_Click(sender As Object, e As EventArgs) Handles btnBackSpace.Click
 
         If auxiliarValue.ToString.Length = 1 Then
@@ -82,7 +78,7 @@
         resetValues()
         lastButtonHas = Constants.UNDEFINED_OPERATION
     End Sub
-    Private Sub numberHasPressed(sender As Object, e As EventArgs) Handles btnZero.Click, btnTwo.Click, btnThree.Click, btnSix.Click, btnSeven.Click, btnOne.Click, btnNine.Click, btnFour.Click, btnFive.Click, btnEight.Click
+    Private Sub numberHasPressed(sender As Object, e As EventArgs) Handles btnZero.Click, btnTwo.Click, btnThree.Click, btnSix.Click, btnSeven.Click, btnOne.Click, btnNine.Click, btnFour.Click, btnFive.Click, btnEight.Click, btnDot.Click
         Dim btnNumber As Button = sender
         If lastButtonHas.Equals(Constants.UNDEFINED_OPERATION) And operation.Equals(Constants.HAS_EQUALS) Then
             deleteLastOperationOnOperationScreen()
@@ -92,20 +88,37 @@
         End If
         Try
             If lastButtonHas.Equals(Constants.HAS_NUMBER) Then
-                auxiliarValue = CType(CType(auxiliarValue, String) & btnNumber.Text, Double)
+                If btnNumber.Text.Equals(Constants.DOT_STRING) Then
+                    Dim auxiliarString = CType(auxiliarValue, String)
+                    auxiliarString &= btnNumber.Text & Constants.ZERO_NUM
+                    auxiliarValue = CType(auxiliarString, Double)
+                    printValueOnScreen(btnNumber.Text)
+                Else
+                    auxiliarValue = CType(CType(auxiliarValue, String) & btnNumber.Text, Double)
+                End If
+            End If
+
+            If lastButtonHas.Equals(Constants.HAS_DOT) Then
+                auxiliarValue = CType(CType(auxiliarValue, String) & Constants.DOT_STRING & btnNumber.Text, Double)
             Else
                 auxiliarValue = CType(btnNumber.Text, Double)
             End If
+
         Catch ex As Exception
             printValueOnScreen(Constants.MESSAGE_ERROR)
         End Try
-        lastButtonHas = Constants.HAS_NUMBER
-        printValueOnScreen(auxiliarValue)
         If lastButtonHas.Equals(Constants.HAS_NUMBER) = False And operation.Equals(Constants.HAS_OPERATION) Then
             deleteLastValueOperationScreen()
             updateOperationScreen(auxiliarValue)
         Else
             updateOperationScreen(btnNumber.Text)
+        End If
+
+        If (btnNumber.Text.Equals(Constants.DOT_STRING)) Then
+            lastButtonHas = Constants.HAS_DOT
+        Else
+            lastButtonHas = Constants.HAS_NUMBER
+            printValueOnScreen(auxiliarValue)
         End If
     End Sub
 

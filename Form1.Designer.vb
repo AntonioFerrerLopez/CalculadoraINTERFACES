@@ -105,7 +105,6 @@ Partial Class Calculadora
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnDot.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnDot.Enabled = False
         Me.btnDot.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnDot.Font = New System.Drawing.Font("Dank Mono", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDot.ForeColor = System.Drawing.SystemColors.ControlLightLight
