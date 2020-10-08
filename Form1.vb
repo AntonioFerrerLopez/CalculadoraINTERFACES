@@ -42,11 +42,18 @@
     End Sub
 
     Private Sub btnBackSpace_Click(sender As Object, e As EventArgs) Handles btnBackSpace.Click
+
         If auxiliarValue.ToString.Length = 1 Then
             auxiliarValue = Constants.ZERO_NUM
+        ElseIf operation.Equals(Constants.HAS_EQUALS) Then
+            clearScreen()
+            resetValues()
+            deleteLastOperationOnOperationScreen()
         Else
+
             auxiliarValue = removeLastValueOfDouble(auxiliarValue)
         End If
+
         If lastButtonHas.Equals(Constants.HAS_OPERATION) Then
             operation = Constants.UNDEFINED_OPERATION
             lastButtonHas = Constants.HAS_DELETEONE
@@ -182,7 +189,7 @@
     End Sub
 
     Private Sub deleteLastOperationOnOperationScreen()
-        Dim valueCharsToRemove() As Char = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", " "}
+        Dim valueCharsToRemove() As Char = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
         lblOperationScreen.Text = lblOperationScreen.Text.TrimEnd(valueCharsToRemove)
     End Sub
 
