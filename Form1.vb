@@ -73,6 +73,10 @@
 
 
     Private Sub btnCE_Click(sender As Object, e As EventArgs) Handles btnCE.Click
+        auxiliarValue = Constants.ZERO_NUM
+        printValueOnScreen(auxiliarValue)
+    End Sub
+    Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
         clearScreen()
         clearOperationScreen()
         resetValues()
@@ -211,5 +215,6 @@
             lblScreen.Text = Constants.ZERO_NUM
         End If
     End Sub
+
 
 End Class
