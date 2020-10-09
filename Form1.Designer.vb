@@ -38,15 +38,14 @@ Partial Class Calculadora
         Me.btnEight = New System.Windows.Forms.Button()
         Me.btnSeven = New System.Windows.Forms.Button()
         Me.btnDivision = New System.Windows.Forms.Button()
-        Me.btnRoot = New System.Windows.Forms.Button()
-        Me.btnRisedSquare = New System.Windows.Forms.Button()
-        Me.btnInverse = New System.Windows.Forms.Button()
-        Me.btnC = New System.Windows.Forms.Button()
-        Me.btnCE = New System.Windows.Forms.Button()
-        Me.btnPercentage = New System.Windows.Forms.Button()
-        Me.btnBackSpace = New System.Windows.Forms.Button()
         Me.btnEquals = New System.Windows.Forms.Button()
         Me.btnFive = New System.Windows.Forms.Button()
+        Me.btnBackSpace = New System.Windows.Forms.Button()
+        Me.btnC = New System.Windows.Forms.Button()
+        Me.btnPercentage = New System.Windows.Forms.Button()
+        Me.btnInverse = New System.Windows.Forms.Button()
+        Me.btnCE = New System.Windows.Forms.Button()
+        Me.infoMode = New System.Windows.Forms.Label()
         Me.lblScreen = New System.Windows.Forms.Label()
         Me.lblOperationScreen = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -77,15 +76,14 @@ Partial Class Calculadora
         Me.TableLayoutPanel1.Controls.Add(Me.btnEight, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.btnSeven, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.btnDivision, 3, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnRoot, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnRisedSquare, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnInverse, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnC, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnCE, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnPercentage, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnBackSpace, 3, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.btnEquals, 3, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.btnFive, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnBackSpace, 3, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnC, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnPercentage, 2, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnInverse, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnCE, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.infoMode, 0, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 97)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 6
@@ -358,131 +356,6 @@ Partial Class Calculadora
         Me.btnDivision.Text = "/"
         Me.btnDivision.UseVisualStyleBackColor = False
         '
-        'btnRoot
-        '
-        Me.btnRoot.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRoot.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnRoot.Enabled = False
-        Me.btnRoot.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnRoot.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRoot.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnRoot.Location = New System.Drawing.Point(187, 65)
-        Me.btnRoot.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnRoot.Name = "btnRoot"
-        Me.btnRoot.Size = New System.Drawing.Size(91, 59)
-        Me.btnRoot.TabIndex = 6
-        Me.btnRoot.Tag = "root"
-        Me.btnRoot.Text = "√ₓ"
-        Me.btnRoot.UseVisualStyleBackColor = False
-        '
-        'btnRisedSquare
-        '
-        Me.btnRisedSquare.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRisedSquare.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnRisedSquare.Enabled = False
-        Me.btnRisedSquare.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnRisedSquare.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRisedSquare.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnRisedSquare.Location = New System.Drawing.Point(94, 65)
-        Me.btnRisedSquare.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnRisedSquare.Name = "btnRisedSquare"
-        Me.btnRisedSquare.Size = New System.Drawing.Size(91, 59)
-        Me.btnRisedSquare.TabIndex = 5
-        Me.btnRisedSquare.Tag = "square"
-        Me.btnRisedSquare.Text = "X²"
-        Me.btnRisedSquare.UseVisualStyleBackColor = False
-        '
-        'btnInverse
-        '
-        Me.btnInverse.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnInverse.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnInverse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnInverse.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInverse.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnInverse.Location = New System.Drawing.Point(1, 65)
-        Me.btnInverse.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnInverse.Name = "btnInverse"
-        Me.btnInverse.Size = New System.Drawing.Size(91, 59)
-        Me.btnInverse.TabIndex = 4
-        Me.btnInverse.Tag = "inverse"
-        Me.btnInverse.Text = "¹/ₓ"
-        Me.btnInverse.UseVisualStyleBackColor = False
-        '
-        'btnC
-        '
-        Me.btnC.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnC.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnC.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnC.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnC.Location = New System.Drawing.Point(187, 1)
-        Me.btnC.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnC.Name = "btnC"
-        Me.btnC.Size = New System.Drawing.Size(91, 62)
-        Me.btnC.TabIndex = 2
-        Me.btnC.Text = "C"
-        Me.btnC.UseVisualStyleBackColor = False
-        '
-        'btnCE
-        '
-        Me.btnCE.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCE.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnCE.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCE.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnCE.Location = New System.Drawing.Point(94, 1)
-        Me.btnCE.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnCE.Name = "btnCE"
-        Me.btnCE.Size = New System.Drawing.Size(91, 62)
-        Me.btnCE.TabIndex = 1
-        Me.btnCE.Text = "CE"
-        Me.btnCE.UseVisualStyleBackColor = False
-        '
-        'btnPercentage
-        '
-        Me.btnPercentage.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnPercentage.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnPercentage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnPercentage.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPercentage.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnPercentage.Location = New System.Drawing.Point(1, 1)
-        Me.btnPercentage.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnPercentage.Name = "btnPercentage"
-        Me.btnPercentage.Size = New System.Drawing.Size(91, 62)
-        Me.btnPercentage.TabIndex = 0
-        Me.btnPercentage.Tag = "%"
-        Me.btnPercentage.Text = "%"
-        Me.btnPercentage.UseVisualStyleBackColor = False
-        '
-        'btnBackSpace
-        '
-        Me.btnBackSpace.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnBackSpace.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.btnBackSpace.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnBackSpace.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBackSpace.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnBackSpace.Location = New System.Drawing.Point(280, 1)
-        Me.btnBackSpace.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnBackSpace.Name = "btnBackSpace"
-        Me.btnBackSpace.Size = New System.Drawing.Size(91, 62)
-        Me.btnBackSpace.TabIndex = 2
-        Me.btnBackSpace.Text = "↩"
-        Me.btnBackSpace.UseVisualStyleBackColor = False
-        '
         'btnEquals
         '
         Me.btnEquals.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -517,6 +390,109 @@ Partial Class Calculadora
         Me.btnFive.Text = "5"
         Me.btnFive.UseVisualStyleBackColor = False
         '
+        'btnBackSpace
+        '
+        Me.btnBackSpace.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBackSpace.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btnBackSpace.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBackSpace.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBackSpace.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnBackSpace.Location = New System.Drawing.Point(280, 1)
+        Me.btnBackSpace.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnBackSpace.Name = "btnBackSpace"
+        Me.btnBackSpace.Size = New System.Drawing.Size(91, 62)
+        Me.btnBackSpace.TabIndex = 2
+        Me.btnBackSpace.Text = "↩"
+        Me.btnBackSpace.UseVisualStyleBackColor = False
+        '
+        'btnC
+        '
+        Me.btnC.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnC.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnC.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnC.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnC.Location = New System.Drawing.Point(187, 1)
+        Me.btnC.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnC.Name = "btnC"
+        Me.btnC.Size = New System.Drawing.Size(91, 62)
+        Me.btnC.TabIndex = 2
+        Me.btnC.Text = "C"
+        Me.btnC.UseVisualStyleBackColor = False
+        '
+        'btnPercentage
+        '
+        Me.btnPercentage.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnPercentage.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.btnPercentage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnPercentage.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPercentage.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnPercentage.Location = New System.Drawing.Point(187, 65)
+        Me.btnPercentage.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnPercentage.Name = "btnPercentage"
+        Me.btnPercentage.Size = New System.Drawing.Size(91, 59)
+        Me.btnPercentage.TabIndex = 0
+        Me.btnPercentage.Tag = "%"
+        Me.btnPercentage.Text = "%"
+        Me.btnPercentage.UseVisualStyleBackColor = False
+        '
+        'btnInverse
+        '
+        Me.btnInverse.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnInverse.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.btnInverse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnInverse.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInverse.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnInverse.Location = New System.Drawing.Point(94, 65)
+        Me.btnInverse.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnInverse.Name = "btnInverse"
+        Me.btnInverse.Size = New System.Drawing.Size(91, 59)
+        Me.btnInverse.TabIndex = 4
+        Me.btnInverse.Tag = "inverse"
+        Me.btnInverse.Text = "¹/ₓ"
+        Me.btnInverse.UseVisualStyleBackColor = False
+        '
+        'btnCE
+        '
+        Me.btnCE.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCE.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCE.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCE.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnCE.Location = New System.Drawing.Point(94, 1)
+        Me.btnCE.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnCE.Name = "btnCE"
+        Me.btnCE.Size = New System.Drawing.Size(91, 62)
+        Me.btnCE.TabIndex = 1
+        Me.btnCE.Text = "CE"
+        Me.btnCE.UseVisualStyleBackColor = False
+        '
+        'infoMode
+        '
+        Me.infoMode.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.infoMode.AutoSize = True
+        Me.infoMode.BackColor = System.Drawing.SystemColors.Control
+        Me.infoMode.Font = New System.Drawing.Font("Dank Mono", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.infoMode.Location = New System.Drawing.Point(3, 0)
+        Me.infoMode.Name = "infoMode"
+        Me.TableLayoutPanel1.SetRowSpan(Me.infoMode, 2)
+        Me.infoMode.Size = New System.Drawing.Size(87, 125)
+        Me.infoMode.TabIndex = 24
+        Me.infoMode.Text = "MODO"
+        Me.infoMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'lblScreen
         '
         Me.lblScreen.BackColor = System.Drawing.Color.Silver
@@ -549,6 +525,7 @@ Partial Class Calculadora
         Me.Name = "Calculadora"
         Me.Text = "Calculadora"
         Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -571,8 +548,6 @@ Partial Class Calculadora
     Friend WithEvents btnEight As Button
     Friend WithEvents btnSeven As Button
     Friend WithEvents btnDivision As Button
-    Friend WithEvents btnRoot As Button
-    Friend WithEvents btnRisedSquare As Button
     Friend WithEvents btnInverse As Button
     Friend WithEvents btnC As Button
     Friend WithEvents btnCE As Button
@@ -580,4 +555,5 @@ Partial Class Calculadora
     Friend WithEvents lblScreen As Label
     Friend WithEvents btnBackSpace As Button
     Friend WithEvents lblOperationScreen As Label
+    Friend WithEvents infoMode As Label
 End Class

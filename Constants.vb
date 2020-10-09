@@ -41,5 +41,9 @@
     Friend Const SIGN_CHANGER_NUM As Integer = -1
     Friend Const PERCENTAGE_HUNDRED_NUM As Integer = 100
 
+    Friend Const MODE_ESTANDAR As String = "ESTANDAR"
+    Friend Const MODE_CIENCE As String = "CIENTÍFICA"
+
+
 
 End Class

@@ -12,6 +12,7 @@
 
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblScreen.Text = Constants.DEFAULT_SCREEN_VALUE
+        infoMode.Text = "CIENTIFICA"
     End Sub
 
 
@@ -135,7 +136,7 @@
 
     End Sub
 
-    Private Sub operationPressed(sender As Object, e As EventArgs) Handles MyBase.Click, btnRoot.Click, btnRisedSquare.Click, btnPlus.Click, btnPercentage.Click, btnMultiply.Click, btnMinus.Click, btnInverse.Click, btnDivision.Click
+    Private Sub operationPressed(sender As Object, e As EventArgs) Handles MyBase.Click, btnPlus.Click, btnPercentage.Click, btnMultiply.Click, btnMinus.Click, btnInverse.Click, btnDivision.Click
         Dim buttonPressed As Button = sender
 
         If operation.Equals(Constants.HAS_EQUALS) Then operation = Constants.UNDEFINED_OPERATION
@@ -248,4 +249,5 @@
         deleteLastOperationOnOperationScreen()
         updateOperationScreen(auxiliarValue)
     End Sub
+
 End Class
