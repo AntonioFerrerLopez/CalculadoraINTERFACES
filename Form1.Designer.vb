@@ -139,7 +139,6 @@ Partial Class Calculadora
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnNegativeChange.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnNegativeChange.Enabled = False
         Me.btnNegativeChange.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnNegativeChange.Font = New System.Drawing.Font("Dank Mono", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNegativeChange.ForeColor = System.Drawing.SystemColors.ControlLightLight

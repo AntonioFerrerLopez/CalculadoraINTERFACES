@@ -37,6 +37,7 @@
     Friend Const ONE_NUM As Integer = 1
     Friend Const ZERO_NUM As Integer = 0
     Friend Const TEN_NUM As Integer = 10
+    Friend Const SIGN_CHANGER_NUM As Integer = -1
 
 
 End Class

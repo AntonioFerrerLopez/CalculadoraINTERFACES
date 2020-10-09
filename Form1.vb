@@ -242,5 +242,10 @@
         End If
     End Sub
 
-
+    Private Sub btnNegativeChange_Click(sender As Object, e As EventArgs) Handles btnNegativeChange.Click
+        auxiliarValue *= Constants.SIGN_CHANGER_NUM
+        printValueOnScreen(auxiliarValue)
+        deleteLastOperationOnOperationScreen()
+        updateOperationScreen(auxiliarValue)
+    End Sub
 End Class
