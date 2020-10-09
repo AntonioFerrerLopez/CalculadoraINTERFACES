@@ -402,7 +402,6 @@ Partial Class Calculadora
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnInverse.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnInverse.Enabled = False
         Me.btnInverse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnInverse.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnInverse.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -455,7 +454,6 @@ Partial Class Calculadora
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnPercentage.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.btnPercentage.Enabled = False
         Me.btnPercentage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnPercentage.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPercentage.ForeColor = System.Drawing.SystemColors.ControlLightLight

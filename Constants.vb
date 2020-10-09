@@ -38,6 +38,7 @@
     Friend Const ZERO_NUM As Integer = 0
     Friend Const TEN_NUM As Integer = 10
     Friend Const SIGN_CHANGER_NUM As Integer = -1
+    Friend Const PERCENTAGE_HUNDRED_NUM As Integer = 100
 
 
 End Class
