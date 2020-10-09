@@ -16,7 +16,7 @@
                     result /= auxiliarValue
                 End If
             Case Constants.OP_PERCENTAGE
-                result = (auxiliarValue * Constants.PERCENTAGE_HUNDRED_NUM) / result
+                result = (result * auxiliarValue) / Constants.PERCENTAGE_HUNDRED_NUM
             Case Constants.OP_INVERSE
                 result = Constants.ONE_NUM / result
 
