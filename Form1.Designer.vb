@@ -462,7 +462,7 @@ Partial Class Calculadora
         Me.btnPercentage.Name = "btnPercentage"
         Me.btnPercentage.Size = New System.Drawing.Size(91, 62)
         Me.btnPercentage.TabIndex = 0
-        Me.btnPercentage.Tag = "percentage"
+        Me.btnPercentage.Tag = "%"
         Me.btnPercentage.Text = "%"
         Me.btnPercentage.UseVisualStyleBackColor = False
         '

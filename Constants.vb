@@ -21,10 +21,11 @@
     Friend Const OP_MINUS As String = "-"
     Friend Const OP_MULTIPLY As String = "*"
     Friend Const OP_DIVISION As String = "/"
-    Friend Const OP_ROOT As String = "root"
-    Friend Const OP_SQUARE As String = "square"
     Friend Const OP_INVERSE As String = " inverse "
     Friend Const OP_PERCENTAGE As String = "%"
+    Friend Const OP_ROOT As String = "root"
+    Friend Const OP_SQUARE As String = "square"
+
 
     Friend Const NINE_NUM As Integer = 9
     Friend Const EIGHT_NUM As Integer = 8
