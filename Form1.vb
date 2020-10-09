@@ -78,35 +78,30 @@
         resetValues()
         lastButtonHas = Constants.UNDEFINED_OPERATION
     End Sub
-    Private Sub numberHasPressed(sender As Object, e As EventArgs) Handles btnZero.Click, btnTwo.Click, btnThree.Click, btnSix.Click, btnSeven.Click, btnOne.Click, btnNine.Click, btnFour.Click, btnFive.Click, btnEight.Click, btnDot.Click
+    Private Sub numberHasPressed(sender As Object, e As EventArgs) Handles btnZero.Click, btnTwo.Click, btnThree.Click, btnSix.Click, btnSeven.Click, btnOne.Click, btnNine.Click, btnFour.Click, btnFive.Click, btnEight.Click
         Dim btnNumber As Button = sender
+        ' primera operación y antes se pulso equals 
         If lastButtonHas.Equals(Constants.UNDEFINED_OPERATION) And operation.Equals(Constants.HAS_EQUALS) Then
             deleteLastOperationOnOperationScreen()
             printValueOnScreen(btnNumber.Text)
             resetValues()
             lastButtonHas = Constants.UNDEFINED_OPERATION
         End If
+
         Try
             If lastButtonHas.Equals(Constants.HAS_NUMBER) Then
-                If btnNumber.Text.Equals(Constants.DOT_STRING) Then
-                    Dim auxiliarString = CType(auxiliarValue, String)
-                    auxiliarString &= btnNumber.Text & Constants.ZERO_NUM
-                    auxiliarValue = CType(auxiliarString, Double)
-                    printValueOnScreen(btnNumber.Text)
-                Else
-                    auxiliarValue = CType(CType(auxiliarValue, String) & btnNumber.Text, Double)
-                End If
-            End If
-
-            If lastButtonHas.Equals(Constants.HAS_DOT) Then
-                auxiliarValue = CType(CType(auxiliarValue, String) & Constants.DOT_STRING & btnNumber.Text, Double)
+                auxiliarValue = CType(CType(auxiliarValue, String) & btnNumber.Text, Double)
+            ElseIf lastButtonHas.Equals(Constants.HAS_DOT) Then
+                auxiliarValue += (CType(btnNumber.Text, Double) / Constants.TEN_NUM)
+                printValueOnScreen(auxiliarValue)
             Else
                 auxiliarValue = CType(btnNumber.Text, Double)
             End If
 
-        Catch ex As Exception
+        Catch exception As Exception
             printValueOnScreen(Constants.MESSAGE_ERROR)
         End Try
+
         If lastButtonHas.Equals(Constants.HAS_NUMBER) = False And operation.Equals(Constants.HAS_OPERATION) Then
             deleteLastValueOperationScreen()
             updateOperationScreen(auxiliarValue)
@@ -114,12 +109,30 @@
             updateOperationScreen(btnNumber.Text)
         End If
 
-        If (btnNumber.Text.Equals(Constants.DOT_STRING)) Then
-            lastButtonHas = Constants.HAS_DOT
+        lastButtonHas = Constants.HAS_NUMBER
+        printValueOnScreen(auxiliarValue)
+
+    End Sub
+    Private Sub dot_hasPressed(sender As Object, e As EventArgs) Handles btnDot.Click
+        Dim dotButton As Button = sender
+
+        If lastButtonHas.Equals(Constants.HAS_NUMBER) Then
+            Dim auxiliarString = CType(auxiliarValue, String)
+            auxiliarString &= dotButton.Text & Constants.ZERO_NUM
+            auxiliarValue = CType(auxiliarString, Double)
+            printValueOnScreen(dotButton.Text)
+            updateOperationScreen(dotButton.Text)
+
         Else
-            lastButtonHas = Constants.HAS_NUMBER
-            printValueOnScreen(auxiliarValue)
+            Try
+                auxiliarValue = CType(Constants.ZERO_NUM + dotButton.Text, Double)
+            Catch exception As Exception
+                printValueOnScreen(Constants.MESSAGE_ERROR)
+            End Try
         End If
+
+        lastButtonHas = Constants.HAS_DOT
+
     End Sub
 
     Private Sub operationPressed(sender As Object, e As EventArgs) Handles MyBase.Click, btnRoot.Click, btnRisedSquare.Click, btnPlus.Click, btnPercentage.Click, btnMultiply.Click, btnMinus.Click, btnInverse.Click, btnDivision.Click
@@ -164,7 +177,7 @@
 
             If lastButtonHas.Equals(Constants.HAS_OPERATION) Then HasDoubleTapOperation(buttonPressed)
             updateOperationScreen(operation)
-            End If
+        End If
         lastButtonHas = Constants.HAS_OPERATION
 
         printValueOnScreen(operation)

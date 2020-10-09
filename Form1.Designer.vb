@@ -113,7 +113,7 @@ Partial Class Calculadora
         Me.btnDot.Name = "btnDot"
         Me.btnDot.Size = New System.Drawing.Size(91, 62)
         Me.btnDot.TabIndex = 22
-        Me.btnDot.Text = ","
+        Me.btnDot.Text = "."
         Me.btnDot.UseVisualStyleBackColor = False
         '
         'btnZero
