@@ -1,4 +1,4 @@
-﻿Public Class Calculadora
+﻿Public Class vistaCalculadora
 
     Dim doOperations As Boolean = False
     Dim lastButtonHas As String = Constants.UNDEFINED_OPERATION
@@ -9,11 +9,16 @@
 
     Dim calculator = New MakerCalc()
 
-
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblScreen.Text = Constants.DEFAULT_SCREEN_VALUE
-        infoMode.Text = "CIENTIFICA"
+        lblMode.Text = Constants.MODE_ESTANDAR
+
+        cientificTable.Width = 101
+        cientificTable.Height = 302
+
+        ' 386 x 520 normal 500 x 520 cientifica 
     End Sub
+
 
 
 

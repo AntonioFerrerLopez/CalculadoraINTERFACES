@@ -39,10 +39,10 @@ F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\bin\De
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\bin\Debug\Calculadora1.pdb
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\bin\Debug\Calculadora1.xml
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.vbprojAssemblyReference.cache
-F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.Calculadora.resources
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.Resources.resources
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.vbproj.GenerateResource.cache
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.vbproj.CoreCompileInputs.cache
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.exe
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.xml
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.pdb
+F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.vistaCalculadora.resources
