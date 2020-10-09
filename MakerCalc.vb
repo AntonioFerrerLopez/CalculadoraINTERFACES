@@ -10,7 +10,7 @@
                 result *= auxiliarValue
             Case Constants.OP_DIVISION
                 If (auxiliarValue = Constants.ZERO_NUM) Then
-                    MsgBox(Constants.MESSAGE_ERROR)
+                    MsgBox("ERROR , división entre 0")
                     result = 0
                 Else
                     result /= auxiliarValue

@@ -107,7 +107,7 @@ Partial Class Calculadora
         Me.btnDot.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.btnDot.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnDot.Font = New System.Drawing.Font("Dank Mono", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDot.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnDot.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnDot.Location = New System.Drawing.Point(187, 315)
         Me.btnDot.Margin = New System.Windows.Forms.Padding(1)
         Me.btnDot.Name = "btnDot"
@@ -141,7 +141,7 @@ Partial Class Calculadora
         Me.btnNegativeChange.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.btnNegativeChange.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnNegativeChange.Font = New System.Drawing.Font("Dank Mono", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNegativeChange.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnNegativeChange.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnNegativeChange.Location = New System.Drawing.Point(1, 315)
         Me.btnNegativeChange.Margin = New System.Windows.Forms.Padding(1)
         Me.btnNegativeChange.Name = "btnNegativeChange"
@@ -158,7 +158,7 @@ Partial Class Calculadora
         Me.btnPlus.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnPlus.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPlus.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnPlus.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnPlus.Location = New System.Drawing.Point(280, 252)
         Me.btnPlus.Margin = New System.Windows.Forms.Padding(1)
         Me.btnPlus.Name = "btnPlus"
@@ -227,7 +227,7 @@ Partial Class Calculadora
         Me.btnMinus.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnMinus.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnMinus.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnMinus.Location = New System.Drawing.Point(280, 189)
         Me.btnMinus.Margin = New System.Windows.Forms.Padding(1)
         Me.btnMinus.Name = "btnMinus"
@@ -279,7 +279,7 @@ Partial Class Calculadora
         Me.btnMultiply.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnMultiply.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMultiply.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnMultiply.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnMultiply.Location = New System.Drawing.Point(280, 126)
         Me.btnMultiply.Margin = New System.Windows.Forms.Padding(1)
         Me.btnMultiply.Name = "btnMultiply"
@@ -348,7 +348,7 @@ Partial Class Calculadora
         Me.btnDivision.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnDivision.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDivision.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnDivision.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnDivision.Location = New System.Drawing.Point(280, 65)
         Me.btnDivision.Margin = New System.Windows.Forms.Padding(1)
         Me.btnDivision.Name = "btnDivision"
@@ -367,7 +367,7 @@ Partial Class Calculadora
         Me.btnRoot.Enabled = False
         Me.btnRoot.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnRoot.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRoot.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnRoot.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnRoot.Location = New System.Drawing.Point(187, 65)
         Me.btnRoot.Margin = New System.Windows.Forms.Padding(1)
         Me.btnRoot.Name = "btnRoot"
@@ -386,7 +386,7 @@ Partial Class Calculadora
         Me.btnRisedSquare.Enabled = False
         Me.btnRisedSquare.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnRisedSquare.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRisedSquare.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnRisedSquare.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnRisedSquare.Location = New System.Drawing.Point(94, 65)
         Me.btnRisedSquare.Margin = New System.Windows.Forms.Padding(1)
         Me.btnRisedSquare.Name = "btnRisedSquare"
@@ -404,7 +404,7 @@ Partial Class Calculadora
         Me.btnInverse.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.btnInverse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnInverse.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInverse.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnInverse.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnInverse.Location = New System.Drawing.Point(1, 65)
         Me.btnInverse.Margin = New System.Windows.Forms.Padding(1)
         Me.btnInverse.Name = "btnInverse"
@@ -422,7 +422,7 @@ Partial Class Calculadora
         Me.btnC.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnC.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnC.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnC.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnC.Location = New System.Drawing.Point(187, 1)
         Me.btnC.Margin = New System.Windows.Forms.Padding(1)
         Me.btnC.Name = "btnC"
@@ -439,7 +439,7 @@ Partial Class Calculadora
         Me.btnCE.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnCE.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCE.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCE.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnCE.Location = New System.Drawing.Point(94, 1)
         Me.btnCE.Margin = New System.Windows.Forms.Padding(1)
         Me.btnCE.Name = "btnCE"
@@ -456,7 +456,7 @@ Partial Class Calculadora
         Me.btnPercentage.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.btnPercentage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnPercentage.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPercentage.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnPercentage.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnPercentage.Location = New System.Drawing.Point(1, 1)
         Me.btnPercentage.Margin = New System.Windows.Forms.Padding(1)
         Me.btnPercentage.Name = "btnPercentage"
@@ -474,7 +474,7 @@ Partial Class Calculadora
         Me.btnBackSpace.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnBackSpace.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnBackSpace.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBackSpace.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnBackSpace.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnBackSpace.Location = New System.Drawing.Point(280, 1)
         Me.btnBackSpace.Margin = New System.Windows.Forms.Padding(1)
         Me.btnBackSpace.Name = "btnBackSpace"
@@ -491,7 +491,7 @@ Partial Class Calculadora
         Me.btnEquals.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnEquals.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEquals.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnEquals.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnEquals.Location = New System.Drawing.Point(280, 315)
         Me.btnEquals.Margin = New System.Windows.Forms.Padding(1)
         Me.btnEquals.Name = "btnEquals"
