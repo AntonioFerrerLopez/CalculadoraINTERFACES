@@ -9,13 +9,11 @@
     Dim result As Double = Constants.ZERO_NUM
     Dim operation As String = Constants.UNDEFINED_OPERATION
 
-
     Dim calculator = New MakerCalc()
 
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblScreen.Text = Constants.DEFAULT_SCREEN_VALUE
         lblMode.Text = Constants.MODE_ESTANDAR
-
         Me.Size = New Size(386, 520)
     End Sub
 
