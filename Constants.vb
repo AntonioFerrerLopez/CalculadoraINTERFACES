@@ -1,4 +1,5 @@
 ﻿Public Class Constants
+
     Friend Const DEFAULT_SCREEN_VALUE = "0,0"
     Friend Const EMPTY_VALUE = ""
     Friend Const SPACER = " "
@@ -26,7 +27,6 @@
     Friend Const OP_ROOT As String = "root"
     Friend Const OP_SQUARE As String = "square"
 
-
     Friend Const NINE_NUM As Integer = 9
     Friend Const EIGHT_NUM As Integer = 8
     Friend Const SEVEN_NUM As Integer = 7
@@ -43,7 +43,5 @@
 
     Friend Const MODE_ESTANDAR As String = "ESTANDAR"
     Friend Const MODE_CIENCE As String = "CIENTÍFICA"
-
-
 
 End Class

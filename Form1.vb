@@ -1,5 +1,7 @@
 ﻿Public Class vistaCalculadora
 
+    Dim modeActive As String = Constants.MODE_ESTANDAR
+
     Dim doOperations As Boolean = False
     Dim lastButtonHas As String = Constants.UNDEFINED_OPERATION
     Dim screenValue As Double = Constants.ZERO_NUM
@@ -7,19 +9,27 @@
     Dim result As Double = Constants.ZERO_NUM
     Dim operation As String = Constants.UNDEFINED_OPERATION
 
+
     Dim calculator = New MakerCalc()
 
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblScreen.Text = Constants.DEFAULT_SCREEN_VALUE
         lblMode.Text = Constants.MODE_ESTANDAR
 
-        cientificTable.Width = 101
-        cientificTable.Height = 302
-
-        ' 386 x 520 normal 500 x 520 cientifica 
+        Me.Size = New Size(386, 520)
     End Sub
 
-
+    Private Sub changeCalcMode()
+        If modeActive.Equals(Constants.MODE_ESTANDAR) Then
+            Me.Size = New Size(483, 520)
+            modeActive = Constants.MODE_CIENCE
+            lblMode.Text = Constants.MODE_CIENCE
+        Else
+            Me.Size = New Size(386, 520)
+            modeActive = Constants.MODE_ESTANDAR
+            lblMode.Text = Constants.MODE_ESTANDAR
+        End If
+    End Sub
 
 
     Private Function screenHasDefaultValue()
@@ -253,6 +263,10 @@
         printValueOnScreen(auxiliarValue)
         deleteLastOperationOnOperationScreen()
         updateOperationScreen(auxiliarValue)
+    End Sub
+
+    Private Sub btnChangeMode_Click(sender As Object, e As EventArgs) Handles btnChangeMode.Click
+        changeCalcMode()
     End Sub
 
 End Class
