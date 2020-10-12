@@ -29,8 +29,17 @@
                 result = Math.Pow(result, Constants.THREE_NUM)
             Case Constants.OP_ELEVATED_TO
                 result = Math.Pow(result, auxiliarValue)
+            Case Constants.OP_FACTORIAL
+                result = makeFactorial(result)
         End Select
         calcForm.setResult(result)
     End Sub
+    Private Function makeFactorial(value)
+        Dim factorial As Double = 1
+        For index = Constants.ONE_NUM To value
+            factorial *= index
+        Next index
+        Return factorial
+    End Function
 
 End Class

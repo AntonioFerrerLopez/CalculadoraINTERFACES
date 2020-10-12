@@ -201,7 +201,7 @@
         End If
         lastButtonHas = Constants.HAS_OPERATION
 
-        If operation.Equals(Constants.OP_SQUARED) OrElse operation.Equals(Constants.OP_CUBED) Then
+        If operation.Equals(Constants.OP_SQUARED) OrElse operation.Equals(Constants.OP_CUBED) OrElse operation.Equals(Constants.OP_FACTORIAL) Then
             equalsOperations()
         Else
             printValueOnScreen(operation)
