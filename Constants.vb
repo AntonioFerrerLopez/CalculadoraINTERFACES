@@ -26,7 +26,7 @@
     Friend Const OP_PERCENTAGE As String = "%"
 
     Friend Const OP_SQUARED As String = "sqr"
-    Friend Const OP_CUBED As String = "square"
+    Friend Const OP_CUBED As String = "cub"
     Friend Const OP_ELEVATED_TO As String = "^"
     Friend Const OP_FACTORIAL As String = "n!"
 

@@ -642,7 +642,7 @@ Partial Class vistaCalculadora
         Me.btnCubed.Name = "btnCubed"
         Me.btnCubed.Size = New System.Drawing.Size(87, 57)
         Me.btnCubed.TabIndex = 4
-        Me.btnCubed.Tag = "^3"
+        Me.btnCubed.Tag = "cub"
         Me.btnCubed.Text = "X³"
         Me.btnCubed.UseVisualStyleBackColor = False
         '
