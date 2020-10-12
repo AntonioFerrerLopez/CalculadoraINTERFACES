@@ -515,7 +515,7 @@ Partial Class vistaCalculadora
         Me.btnInverse.Name = "btnInverse"
         Me.btnInverse.Size = New System.Drawing.Size(89, 57)
         Me.btnInverse.TabIndex = 4
-        Me.btnInverse.Tag = "inverse"
+        Me.btnInverse.Tag = "1/"
         Me.btnInverse.Text = "¹/ₓ"
         Me.btnInverse.UseVisualStyleBackColor = False
         '

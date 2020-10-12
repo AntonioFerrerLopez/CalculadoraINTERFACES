@@ -132,7 +132,7 @@
 
         If lastButtonHas.Equals(Constants.HAS_NUMBER) Then
             Dim auxiliarString = CType(auxiliarValue, String)
-            auxiliarString &= dotButton.Text & Constants.ZERO_NUM
+            auxiliarString &= dotButton.Text
             auxiliarValue = CType(auxiliarString, Double)
             printValueOnScreen(dotButton.Text)
             updateOperationScreen(dotButton.Text)
@@ -170,9 +170,16 @@
             Else
                 result = auxiliarValue
                 auxiliarValue = Constants.ZERO_NUM
+
                 If lastButtonHas.Equals(Constants.HAS_OPERATION) Then HasDoubleTapOperation(buttonPressed)
 
-                updateOperationScreen(operation)
+                If operation.Equals(Constants.OP_INVERSE) Then
+                    deleteLastValueOperationScreen()
+                    updateOperationScreen(Constants.OP_INVERSE & result)
+                Else
+                    updateOperationScreen(operation)
+                End If
+
             End If
 
 
