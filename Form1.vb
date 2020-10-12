@@ -9,7 +9,7 @@
     Dim result As Double = Constants.ZERO_NUM
     Dim operation As String = Constants.UNDEFINED_OPERATION
 
-    Dim calculator = New MakerCalc()
+    Dim calculator = New MakerCalc(Me)
 
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblScreen.Text = Constants.DEFAULT_SCREEN_VALUE
@@ -149,7 +149,7 @@
 
     End Sub
 
-    Private Sub operationPressed(sender As Object, e As EventArgs) Handles MyBase.Click, btnPlus.Click, btnPercentage.Click, btnMultiply.Click, btnMinus.Click, btnInverse.Click, btnDivision.Click
+    Private Sub operationPressed(sender As Object, e As EventArgs) Handles MyBase.Click, btnPlus.Click, btnPercentage.Click, btnMultiply.Click, btnMinus.Click, btnInverse.Click, btnDivision.Click, btnUpToNum.Click, btnSquared.Click, btnFactorial.Click, btnCubed.Click
         Dim buttonPressed As Button = sender
 
         If operation.Equals(Constants.HAS_EQUALS) Then operation = Constants.UNDEFINED_OPERATION
@@ -161,7 +161,7 @@
             End If
 
             If result <> Constants.ZERO_NUM Then
-                result = calculator.makeOperations(operation, result, auxiliarValue)
+                calculator.makeOperations(operation, result, auxiliarValue)
                 operation = buttonPressed.Tag
                 If lastButtonHas.Equals(Constants.HAS_OPERATION) Then HasDoubleTapOperation(buttonPressed)
                 updateOperationScreen(operation)
@@ -201,7 +201,12 @@
         End If
         lastButtonHas = Constants.HAS_OPERATION
 
-        printValueOnScreen(operation)
+        If operation.Equals(Constants.OP_SQUARED) Then
+            equalsOperations()
+        Else
+            printValueOnScreen(operation)
+        End If
+
 
 
     End Sub
@@ -211,12 +216,19 @@
     End Sub
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
-        result = calculator.makeOperations(operation, result, auxiliarValue)
+        equalsOperations()
+    End Sub
+
+    Friend Sub equalsOperations()
+        calculator.makeOperations(operation, result, auxiliarValue)
         printValueOnScreen(result)
         updateOperationScreen(Constants.EQUALS_SIMBOL & result & Constants.SEPARATOR_SIMBOL & result)
         operation = Constants.HAS_EQUALS
         auxiliarValue = result
         lastButtonHas = Constants.UNDEFINED_OPERATION
+    End Sub
+    Friend Sub setResult(resultOperation)
+        Me.result = resultOperation
     End Sub
 
     Private Sub updateOperationScreen(newValue)

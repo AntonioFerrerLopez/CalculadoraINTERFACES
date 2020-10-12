@@ -1,6 +1,10 @@
 ﻿Public Class MakerCalc
+    Dim calcForm As vistaCalculadora
+    Public Sub New(calcForm)
+        Me.calcForm = calcForm
+    End Sub
 
-    Public Function makeOperations(operation, result, auxiliarValue)
+    Public Sub makeOperations(operation, result, auxiliarValue)
         Select Case operation
             Case Constants.OP_PLUS
                 result += auxiliarValue
@@ -19,9 +23,14 @@
                 result = (result * auxiliarValue) / Constants.PERCENTAGE_HUNDRED_NUM
             Case Constants.OP_INVERSE
                 result = Constants.ONE_NUM / result
-
+            Case Constants.OP_SQUARED
+                result = Math.Pow(result, Constants.TWO_NUM)
+            Case Constants.OP_CUBED
+                result = Math.Pow(result, Constants.THREE_NUM)
+            Case Constants.OP_ELEVATED_TO
+                result = Math.Pow(result, auxiliarValue)
         End Select
-        Return result
-    End Function
+        calcForm.setResult(result)
+    End Sub
 
 End Class

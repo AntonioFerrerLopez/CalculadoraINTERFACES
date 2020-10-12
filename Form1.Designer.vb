@@ -606,6 +606,7 @@ Partial Class vistaCalculadora
         Me.btnFactorial.Name = "btnFactorial"
         Me.btnFactorial.Size = New System.Drawing.Size(87, 57)
         Me.btnFactorial.TabIndex = 6
+        Me.btnFactorial.Tag = "n!"
         Me.btnFactorial.Text = "n!"
         Me.btnFactorial.UseVisualStyleBackColor = False
         '
@@ -623,7 +624,7 @@ Partial Class vistaCalculadora
         Me.btnUpToNum.Name = "btnUpToNum"
         Me.btnUpToNum.Size = New System.Drawing.Size(87, 57)
         Me.btnUpToNum.TabIndex = 5
-        Me.btnUpToNum.Tag = ""
+        Me.btnUpToNum.Tag = "^"
         Me.btnUpToNum.Text = "xⁿ"
         Me.btnUpToNum.UseVisualStyleBackColor = False
         '
@@ -641,6 +642,7 @@ Partial Class vistaCalculadora
         Me.btnCubed.Name = "btnCubed"
         Me.btnCubed.Size = New System.Drawing.Size(87, 57)
         Me.btnCubed.TabIndex = 4
+        Me.btnCubed.Tag = "^3"
         Me.btnCubed.Text = "X³"
         Me.btnCubed.UseVisualStyleBackColor = False
         '
@@ -658,6 +660,7 @@ Partial Class vistaCalculadora
         Me.btnSquared.Name = "btnSquared"
         Me.btnSquared.Size = New System.Drawing.Size(87, 57)
         Me.btnSquared.TabIndex = 3
+        Me.btnSquared.Tag = "sqr"
         Me.btnSquared.Text = "X²"
         Me.btnSquared.UseVisualStyleBackColor = False
         '

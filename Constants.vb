@@ -24,8 +24,11 @@
     Friend Const OP_DIVISION As String = "/"
     Friend Const OP_INVERSE As String = "1/"
     Friend Const OP_PERCENTAGE As String = "%"
-    Friend Const OP_ROOT As String = "root"
-    Friend Const OP_SQUARE As String = "square"
+
+    Friend Const OP_SQUARED As String = "sqr"
+    Friend Const OP_CUBED As String = "square"
+    Friend Const OP_ELEVATED_TO As String = "^"
+    Friend Const OP_FACTORIAL As String = "n!"
 
     Friend Const NINE_NUM As Integer = 9
     Friend Const EIGHT_NUM As Integer = 8
