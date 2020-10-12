@@ -3,7 +3,6 @@
     Public Sub New(calcForm)
         Me.calcForm = calcForm
     End Sub
-
     Public Sub makeOperations(operation, result, auxiliarValue)
         Select Case operation
             Case Constants.OP_PLUS
@@ -41,5 +40,4 @@
         Next index
         Return factorial
     End Function
-
 End Class
