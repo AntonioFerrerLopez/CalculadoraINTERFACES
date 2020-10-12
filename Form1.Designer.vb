@@ -53,10 +53,10 @@ Partial Class vistaCalculadora
         Me.MODOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnChangeMode = New System.Windows.Forms.ToolStripMenuItem()
         Me.cientificTable = New System.Windows.Forms.TableLayoutPanel()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnFactorial = New System.Windows.Forms.Button()
+        Me.btnUpToNum = New System.Windows.Forms.Button()
+        Me.btnCubed = New System.Windows.Forms.Button()
+        Me.btnSquared = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.cientificTable.SuspendLayout()
@@ -569,7 +569,7 @@ Partial Class vistaCalculadora
         'btnChangeMode
         '
         Me.btnChangeMode.Name = "btnChangeMode"
-        Me.btnChangeMode.Size = New System.Drawing.Size(180, 22)
+        Me.btnChangeMode.Size = New System.Drawing.Size(176, 22)
         Me.btnChangeMode.Text = "CAMBIAR MODO"
         '
         'cientificTable
@@ -578,10 +578,10 @@ Partial Class vistaCalculadora
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cientificTable.ColumnCount = 1
         Me.cientificTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.cientificTable.Controls.Add(Me.Button4, 0, 3)
-        Me.cientificTable.Controls.Add(Me.Button3, 0, 2)
-        Me.cientificTable.Controls.Add(Me.Button2, 0, 1)
-        Me.cientificTable.Controls.Add(Me.Button1, 0, 0)
+        Me.cientificTable.Controls.Add(Me.btnFactorial, 0, 3)
+        Me.cientificTable.Controls.Add(Me.btnUpToNum, 0, 2)
+        Me.cientificTable.Controls.Add(Me.btnCubed, 0, 1)
+        Me.cientificTable.Controls.Add(Me.btnSquared, 0, 0)
         Me.cientificTable.Location = New System.Drawing.Point(374, 116)
         Me.cientificTable.Name = "cientificTable"
         Me.cientificTable.RowCount = 4
@@ -592,73 +592,74 @@ Partial Class vistaCalculadora
         Me.cientificTable.Size = New System.Drawing.Size(89, 236)
         Me.cientificTable.TabIndex = 5
         '
-        'Button4
+        'btnFactorial
         '
-        Me.Button4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.btnFactorial.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button4.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button4.Location = New System.Drawing.Point(1, 178)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(1)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(87, 57)
-        Me.Button4.TabIndex = 6
-        Me.Button4.Text = "↩"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnFactorial.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btnFactorial.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnFactorial.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFactorial.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnFactorial.Location = New System.Drawing.Point(1, 178)
+        Me.btnFactorial.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnFactorial.Name = "btnFactorial"
+        Me.btnFactorial.Size = New System.Drawing.Size(87, 57)
+        Me.btnFactorial.TabIndex = 6
+        Me.btnFactorial.Text = "n!"
+        Me.btnFactorial.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnUpToNum
         '
-        Me.Button3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.btnUpToNum.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button3.Location = New System.Drawing.Point(1, 119)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(1)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(87, 57)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "↩"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnUpToNum.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btnUpToNum.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnUpToNum.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpToNum.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnUpToNum.Location = New System.Drawing.Point(1, 119)
+        Me.btnUpToNum.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnUpToNum.Name = "btnUpToNum"
+        Me.btnUpToNum.Size = New System.Drawing.Size(87, 57)
+        Me.btnUpToNum.TabIndex = 5
+        Me.btnUpToNum.Tag = ""
+        Me.btnUpToNum.Text = "xⁿ"
+        Me.btnUpToNum.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnCubed
         '
-        Me.Button2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.btnCubed.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button2.Location = New System.Drawing.Point(1, 60)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(1)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(87, 57)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "↩"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnCubed.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btnCubed.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCubed.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCubed.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnCubed.Location = New System.Drawing.Point(1, 60)
+        Me.btnCubed.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnCubed.Name = "btnCubed"
+        Me.btnCubed.Size = New System.Drawing.Size(87, 57)
+        Me.btnCubed.TabIndex = 4
+        Me.btnCubed.Text = "X³"
+        Me.btnCubed.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnSquared
         '
-        Me.Button1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.btnSquared.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button1.Location = New System.Drawing.Point(1, 1)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(1)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 57)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "↩"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnSquared.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btnSquared.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSquared.Font = New System.Drawing.Font("Dank Mono", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSquared.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnSquared.Location = New System.Drawing.Point(1, 1)
+        Me.btnSquared.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnSquared.Name = "btnSquared"
+        Me.btnSquared.Size = New System.Drawing.Size(87, 57)
+        Me.btnSquared.TabIndex = 3
+        Me.btnSquared.Text = "X²"
+        Me.btnSquared.UseVisualStyleBackColor = False
         '
         'vistaCalculadora
         '
@@ -715,8 +716,8 @@ Partial Class vistaCalculadora
     Friend WithEvents MODOToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnChangeMode As ToolStripMenuItem
     Friend WithEvents cientificTable As TableLayoutPanel
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnFactorial As Button
+    Friend WithEvents btnUpToNum As Button
+    Friend WithEvents btnCubed As Button
+    Friend WithEvents btnSquared As Button
 End Class
