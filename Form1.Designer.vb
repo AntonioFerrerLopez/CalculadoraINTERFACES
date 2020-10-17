@@ -53,12 +53,12 @@ Partial Class vistaCalculadora
         Me.MODOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnChangeMode = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AYUDAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.cientificTable = New System.Windows.Forms.TableLayoutPanel()
         Me.btnFactorial = New System.Windows.Forms.Button()
         Me.btnUpToNum = New System.Windows.Forms.Button()
         Me.btnCubed = New System.Windows.Forms.Button()
         Me.btnSquared = New System.Windows.Forms.Button()
-        Me.AYUDAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.cientificTable.SuspendLayout()
@@ -556,7 +556,7 @@ Partial Class vistaCalculadora
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MODOToolStripMenuItem, Me.ToolStripMenuItem1, Me.AYUDAToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(467, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(467, 26)
         Me.MenuStrip1.TabIndex = 4
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -565,20 +565,29 @@ Partial Class vistaCalculadora
         Me.MODOToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnChangeMode})
         Me.MODOToolStripMenuItem.Font = New System.Drawing.Font("Dank Mono", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MODOToolStripMenuItem.Name = "MODOToolStripMenuItem"
-        Me.MODOToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
+        Me.MODOToolStripMenuItem.Size = New System.Drawing.Size(55, 22)
         Me.MODOToolStripMenuItem.Text = "MODO"
         '
         'btnChangeMode
         '
         Me.btnChangeMode.Name = "btnChangeMode"
-        Me.btnChangeMode.Size = New System.Drawing.Size(180, 22)
+        Me.btnChangeMode.Size = New System.Drawing.Size(176, 22)
         Me.btnChangeMode.Text = "CAMBIAR MODO"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(22, 20)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(22, 22)
         Me.ToolStripMenuItem1.Text = " "
+        '
+        'AYUDAToolStripMenuItem
+        '
+        Me.AYUDAToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.AYUDAToolStripMenuItem.Font = New System.Drawing.Font("Dank Mono", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AYUDAToolStripMenuItem.ForeColor = System.Drawing.Color.OrangeRed
+        Me.AYUDAToolStripMenuItem.Name = "AYUDAToolStripMenuItem"
+        Me.AYUDAToolStripMenuItem.Size = New System.Drawing.Size(65, 22)
+        Me.AYUDAToolStripMenuItem.Text = "AYUDA"
         '
         'cientificTable
         '
@@ -672,17 +681,10 @@ Partial Class vistaCalculadora
         Me.btnSquared.Text = "X²"
         Me.btnSquared.UseVisualStyleBackColor = False
         '
-        'AYUDAToolStripMenuItem
-        '
-        Me.AYUDAToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.AYUDAToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon
-        Me.AYUDAToolStripMenuItem.Name = "AYUDAToolStripMenuItem"
-        Me.AYUDAToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
-        Me.AYUDAToolStripMenuItem.Text = "AYUDA"
-        '
         'vistaCalculadora
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(467, 481)
         Me.Controls.Add(Me.cientificTable)
         Me.Controls.Add(Me.lblOperationScreen)
@@ -690,6 +692,7 @@ Partial Class vistaCalculadora
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "vistaCalculadora"

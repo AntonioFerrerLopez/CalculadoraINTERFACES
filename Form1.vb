@@ -286,4 +286,7 @@
         changeCalcMode()
     End Sub
 
+    Private Sub AYUDAToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AYUDAToolStripMenuItem.Click
+        FormHelp.ShowDialog()
+    End Sub
 End Class

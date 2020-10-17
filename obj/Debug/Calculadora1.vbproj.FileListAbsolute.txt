@@ -46,3 +46,4 @@ F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\De
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.xml
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.pdb
 F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.vistaCalculadora.resources
+F:\PROGRAMACION\DAM2\Desarrollo de interfaces\U1\Proyectos\CalculadoraGIT\obj\Debug\Calculadora1.FormHelp.resources
