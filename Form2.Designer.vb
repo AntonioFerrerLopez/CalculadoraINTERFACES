@@ -25,16 +25,16 @@ Partial Class FormHelp
         Me.btnClose = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtHelpBox = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
+        Me.RadioBasicOperations = New System.Windows.Forms.RadioButton()
+        Me.Radiopercentaje = New System.Windows.Forms.RadioButton()
+        Me.RadioCubed = New System.Windows.Forms.RadioButton()
+        Me.RadioInverse = New System.Windows.Forms.RadioButton()
+        Me.RadioElevatedTo = New System.Windows.Forms.RadioButton()
+        Me.RadioChangeSign = New System.Windows.Forms.RadioButton()
+        Me.RadioFactorial = New System.Windows.Forms.RadioButton()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
+        Me.RadioChangeMode = New System.Windows.Forms.RadioButton()
+        Me.RadioSquared = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -61,145 +61,146 @@ Partial Class FormHelp
         'txtHelpBox
         '
         Me.txtHelpBox.Enabled = False
-        Me.txtHelpBox.Location = New System.Drawing.Point(12, 290)
+        Me.txtHelpBox.Font = New System.Drawing.Font("Dank Mono", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtHelpBox.Location = New System.Drawing.Point(15, 290)
         Me.txtHelpBox.Multiline = True
         Me.txtHelpBox.Name = "txtHelpBox"
         Me.txtHelpBox.Size = New System.Drawing.Size(449, 275)
         Me.txtHelpBox.TabIndex = 3
         '
-        'RadioButton1
+        'RadioBasicOperations
         '
-        Me.RadioButton1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.RadioBasicOperations.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RadioButton1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(3, 3)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(218, 25)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Operaciones básicas"
-        Me.RadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RadioBasicOperations.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioBasicOperations.AutoSize = True
+        Me.RadioBasicOperations.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioBasicOperations.Location = New System.Drawing.Point(3, 3)
+        Me.RadioBasicOperations.Name = "RadioBasicOperations"
+        Me.RadioBasicOperations.Size = New System.Drawing.Size(218, 25)
+        Me.RadioBasicOperations.TabIndex = 0
+        Me.RadioBasicOperations.TabStop = True
+        Me.RadioBasicOperations.Text = "Operaciones básicas"
+        Me.RadioBasicOperations.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.RadioBasicOperations.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'Radiopercentaje
         '
-        Me.RadioButton3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.Radiopercentaje.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RadioButton3.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton3.Location = New System.Drawing.Point(3, 34)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(218, 25)
-        Me.RadioButton3.TabIndex = 2
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Calcular porcentajes"
-        Me.RadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.Radiopercentaje.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Radiopercentaje.AutoSize = True
+        Me.Radiopercentaje.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Radiopercentaje.Location = New System.Drawing.Point(3, 34)
+        Me.Radiopercentaje.Name = "Radiopercentaje"
+        Me.Radiopercentaje.Size = New System.Drawing.Size(218, 25)
+        Me.Radiopercentaje.TabIndex = 2
+        Me.Radiopercentaje.TabStop = True
+        Me.Radiopercentaje.Text = "Calcular porcentajes"
+        Me.Radiopercentaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Radiopercentaje.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'RadioCubed
         '
-        Me.RadioButton4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.RadioCubed.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RadioButton4.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton4.Location = New System.Drawing.Point(227, 34)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(219, 25)
-        Me.RadioButton4.TabIndex = 3
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Elevar al cubo"
-        Me.RadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.RadioCubed.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioCubed.AutoSize = True
+        Me.RadioCubed.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioCubed.Location = New System.Drawing.Point(227, 34)
+        Me.RadioCubed.Name = "RadioCubed"
+        Me.RadioCubed.Size = New System.Drawing.Size(219, 25)
+        Me.RadioCubed.TabIndex = 3
+        Me.RadioCubed.TabStop = True
+        Me.RadioCubed.Text = "Elevar al cubo"
+        Me.RadioCubed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.RadioCubed.UseVisualStyleBackColor = True
         '
-        'RadioButton5
+        'RadioInverse
         '
-        Me.RadioButton5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.RadioInverse.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RadioButton5.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton5.Location = New System.Drawing.Point(3, 65)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(218, 25)
-        Me.RadioButton5.TabIndex = 4
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "Calcular la inversa"
-        Me.RadioButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.RadioButton5.UseVisualStyleBackColor = True
+        Me.RadioInverse.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioInverse.AutoSize = True
+        Me.RadioInverse.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioInverse.Location = New System.Drawing.Point(3, 65)
+        Me.RadioInverse.Name = "RadioInverse"
+        Me.RadioInverse.Size = New System.Drawing.Size(218, 25)
+        Me.RadioInverse.TabIndex = 4
+        Me.RadioInverse.TabStop = True
+        Me.RadioInverse.Text = "Calcular la inversa"
+        Me.RadioInverse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.RadioInverse.UseVisualStyleBackColor = True
         '
-        'RadioButton6
+        'RadioElevatedTo
         '
-        Me.RadioButton6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.RadioElevatedTo.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RadioButton6.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton6.Location = New System.Drawing.Point(227, 65)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(219, 25)
-        Me.RadioButton6.TabIndex = 5
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "Elevar a N "
-        Me.RadioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.RadioButton6.UseVisualStyleBackColor = True
+        Me.RadioElevatedTo.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioElevatedTo.AutoSize = True
+        Me.RadioElevatedTo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioElevatedTo.Location = New System.Drawing.Point(227, 65)
+        Me.RadioElevatedTo.Name = "RadioElevatedTo"
+        Me.RadioElevatedTo.Size = New System.Drawing.Size(219, 25)
+        Me.RadioElevatedTo.TabIndex = 5
+        Me.RadioElevatedTo.TabStop = True
+        Me.RadioElevatedTo.Text = "Elevar a N "
+        Me.RadioElevatedTo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.RadioElevatedTo.UseVisualStyleBackColor = True
         '
-        'RadioButton7
+        'RadioChangeSign
         '
-        Me.RadioButton7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.RadioChangeSign.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RadioButton7.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton7.Location = New System.Drawing.Point(3, 96)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(218, 25)
-        Me.RadioButton7.TabIndex = 6
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "Cambiar el signo "
-        Me.RadioButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.RadioButton7.UseVisualStyleBackColor = True
+        Me.RadioChangeSign.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioChangeSign.AutoSize = True
+        Me.RadioChangeSign.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioChangeSign.Location = New System.Drawing.Point(3, 96)
+        Me.RadioChangeSign.Name = "RadioChangeSign"
+        Me.RadioChangeSign.Size = New System.Drawing.Size(218, 25)
+        Me.RadioChangeSign.TabIndex = 6
+        Me.RadioChangeSign.TabStop = True
+        Me.RadioChangeSign.Text = "Cambiar el signo "
+        Me.RadioChangeSign.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.RadioChangeSign.UseVisualStyleBackColor = True
         '
-        'RadioButton8
+        'RadioFactorial
         '
-        Me.RadioButton8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.RadioFactorial.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RadioButton8.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton8.Location = New System.Drawing.Point(227, 96)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(219, 25)
-        Me.RadioButton8.TabIndex = 7
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "Factorial de número"
-        Me.RadioButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.RadioButton8.UseVisualStyleBackColor = True
+        Me.RadioFactorial.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioFactorial.AutoSize = True
+        Me.RadioFactorial.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioFactorial.Location = New System.Drawing.Point(227, 96)
+        Me.RadioFactorial.Name = "RadioFactorial"
+        Me.RadioFactorial.Size = New System.Drawing.Size(219, 25)
+        Me.RadioFactorial.TabIndex = 7
+        Me.RadioFactorial.TabStop = True
+        Me.RadioFactorial.Text = "Factorial de número"
+        Me.RadioFactorial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.RadioFactorial.UseVisualStyleBackColor = True
         '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton2, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton7, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton6, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton5, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton4, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton3, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton8, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton1, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.RadioButton9, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.RadioChangeMode, 0, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.RadioChangeSign, 0, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.RadioElevatedTo, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.RadioInverse, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.RadioCubed, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Radiopercentaje, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.RadioFactorial, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.RadioBasicOperations, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.RadioSquared, 1, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 94)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
@@ -214,37 +215,37 @@ Partial Class FormHelp
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(449, 190)
         Me.TableLayoutPanel1.TabIndex = 4
         '
-        'RadioButton2
+        'RadioChangeMode
         '
-        Me.RadioButton2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.RadioButton2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton2.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.RadioButton2, 2)
-        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(139, 140)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(171, 34)
-        Me.RadioButton2.TabIndex = 8
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Cambio de modo "
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RadioChangeMode.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.RadioChangeMode.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioChangeMode.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.RadioChangeMode, 2)
+        Me.RadioChangeMode.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioChangeMode.Location = New System.Drawing.Point(139, 140)
+        Me.RadioChangeMode.Name = "RadioChangeMode"
+        Me.RadioChangeMode.Size = New System.Drawing.Size(171, 34)
+        Me.RadioChangeMode.TabIndex = 8
+        Me.RadioChangeMode.TabStop = True
+        Me.RadioChangeMode.Text = "Cambio de modo "
+        Me.RadioChangeMode.UseVisualStyleBackColor = True
         '
-        'RadioButton9
+        'RadioSquared
         '
-        Me.RadioButton9.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.RadioSquared.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RadioButton9.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RadioButton9.AutoSize = True
-        Me.RadioButton9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton9.Location = New System.Drawing.Point(227, 3)
-        Me.RadioButton9.Name = "RadioButton9"
-        Me.RadioButton9.Size = New System.Drawing.Size(219, 25)
-        Me.RadioButton9.TabIndex = 9
-        Me.RadioButton9.TabStop = True
-        Me.RadioButton9.Text = "Elevar al cuadrado"
-        Me.RadioButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.RadioButton9.UseVisualStyleBackColor = True
+        Me.RadioSquared.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioSquared.AutoSize = True
+        Me.RadioSquared.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioSquared.Location = New System.Drawing.Point(227, 3)
+        Me.RadioSquared.Name = "RadioSquared"
+        Me.RadioSquared.Size = New System.Drawing.Size(219, 25)
+        Me.RadioSquared.TabIndex = 9
+        Me.RadioSquared.TabStop = True
+        Me.RadioSquared.Text = "Elevar al cuadrado"
+        Me.RadioSquared.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.RadioSquared.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -292,16 +293,16 @@ Partial Class FormHelp
     Friend WithEvents btnClose As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents txtHelpBox As TextBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
+    Friend WithEvents RadioBasicOperations As RadioButton
+    Friend WithEvents Radiopercentaje As RadioButton
+    Friend WithEvents RadioCubed As RadioButton
+    Friend WithEvents RadioInverse As RadioButton
+    Friend WithEvents RadioElevatedTo As RadioButton
+    Friend WithEvents RadioChangeSign As RadioButton
+    Friend WithEvents RadioFactorial As RadioButton
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton9 As RadioButton
+    Friend WithEvents RadioChangeMode As RadioButton
+    Friend WithEvents RadioSquared As RadioButton
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
 End Class
